@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta nombre="viewport" content="width=device-width, initial-scale=1.0">
+        <title> pagina </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header2">
+
+            <div class="menu container">
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="" class="menu-icono" alt="menu">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="inicio.html">Inicio</a></li>
+                        <li><a href="buscar.html">Buscar</a></li>
+                        <li><a href="eliminar.html">Eliminar</a></li>
+                        <li><a href="editar.html">Editar</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="header-contact container">
+                <div class="header-txt">
+                    <h1>ELIMINAR <span>PILOTO</span></h1>
+                    <p>
+       <div>
+
+                <div class="butons">
+                    <a href="inicio.html" class="btn-1">Volver</a>
+                    
+                </div>
+            </div>
+        </div>
+        </header>
+
+        <section class="Contenido">
+            <body>
+            <div id="search-form">
+                <h2>Eliminar por Nombre de Piloto</h2>
+                <form id="form"  action="eliminar.php" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Introduce el nombre">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <div id="search-form">
+                <h2>Eliminar por nombre de Equipo</h2>
+                <form id="form"  action="eliminar_equipo.php" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Introduce el nombre">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            
+
+            </div>
+
+            </div>
+        </section>
+
+           
+        </main>
+    
+    </body>
+</html>
+
+<style>
+    .Contenido {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #6e3907;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(img/eliminar.png);
+    }
+
+    label {
+        font-size: 130%; /* Aumentado el tamaño de la fuente */
+        margin-bottom: 45px; /* Aumentado el espacio inferior */
+    }
+
+    #search-form {
+        background-color: rgba(255, 53, 2, 0.868);
+        padding: 30px; /* Aumentado el padding */
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        color: #fff;
+        width: 500px; /* Aumentado el ancho del formulario */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search-form h2 {
+        margin-bottom: 45px; /* Aumentado el espacio inferior */
+    }
+
+    #search-form label {
+        font-weight: bold;
+        margin-bottom: 15px; /* Aumentado el espacio inferior */
+        display: block;
+    }
+
+    #search-form input[type="text"] {
+        width: 100%;
+        padding: 20px; /* Aumentado el padding */
+        margin-bottom: 25px; /* Aumentado el espacio inferior */
+        border: 1px solid #666;
+        border-radius: 10px; /* Aumentado el radio de borde */
+        box-sizing: border-box;
+        background-color: #333;
+        color: #ffffff;
+        font-size: 18px; /* Aumentado el tamaño de la fuente */
+    }
+
+    #search-form button {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 16px 28px; /* Aumentado el padding */
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 20px; /* Aumentado el tamaño de la fuente */
+    }
+
+    #search-form button:hover {
+        background-color: #000000;
+        color: #ffffff;
+    }
+</style>
