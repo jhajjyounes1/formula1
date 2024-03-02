@@ -1,0 +1,409 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+  
+
+  </head>
+
+
+<body>  
+    <header class="header">
+
+        <div class="menu container">
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+<body>
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <h1>EDITAR PILOTO</h1>
+      <img id="imagenRotativa" src="img/1.gif" alt="Imagen Rotativa">
+      
+
+      <h1 style="color: #f9f9f9;">Actualizar </h1>
+      <form action="actualizar1.php" method="post">
+          <label for="nombre">Piloto a Actualizar:</label>
+          <input type="txt" id="nombre" name="nombre" required>
+  
+          <label for="nuevo_nombre">Nuevo Nombre:</label>
+          <input type="text" id="nuevo_nombre" name="nuevo_nombre" required>
+  
+          <label for="nuevo_pais">Nuevo País:</label>
+          <input type="text" id="nuevo_pais" name="nuevo_pais" required>
+  
+          <label for="nueva_edad">Nueva Edad:</label>
+          <input type="number" id="nueva_edad" name="nueva_edad" required>
+  
+          <label for="nuevo_equipo">Equipo:</label>
+          <input type="text" id="nuevo_equipo" name="nuevo_equipo" required>
+  
+          <button type="submit">Actualizar Piloto</button>
+      </form>
+    </div>
+
+      <div class="formulario">      
+        <h1>EDITAR EQUIPO</h1>
+        <img id="imagenRotativa" src="img/3.jpg" alt="Imagen Rotativa">
+        
+  
+        <h1 style="color: #f9f9f9;">Actualizar </h1>
+        <form action="editar_equipo.php" method="post">
+            <label for="nombre">Equipo a Actualizar:</label>
+            <input type="txt" id="nombre" name="nombre" required>
+    
+            <label for="nuevo_nombre">Nuevo Nombre:</label>
+            <input type="text" id="nuevo_nombre" name="nuevo_nombre" required>
+    
+            <label for="nuevo_patrocinador">Patrocinador:</label>
+            <input type="text" id="nuevo_patrocinador" name="nuevo_patrocinador" required>
+    
+            <label for="nueva_director"> DIRECTOR</label>
+            <input type="text" id="nueva_director" name="nueva_director" required>
+      
+            <button type="submit">Actualizar Equipo</button>
+        </form>
+    </body>
+  
+      </div>
+  </body>
+
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+img {
+    max-width: 90%;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.header {
+    background-image: url(img/7);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    display: block;
+
+}
+
+.menu .navbar ul li a:hover {
+    color: orangered;
+
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    flex-basis: 30%;
+}
+
+.header-txt h1 {
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.header-txt span {
+    color: rgb(254, 8, 29);
+}
+
+.header-txt p {
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 45px;
+    font-weight: bold;
+
+}
+
+.butons {
+    display: flex;
+}
+
+
+.btn-1:hover {
+    background-color: orangered;
+}
+
+
+
+h2 {
+    color:white;
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+
+
+h3 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.btn-2 {
+    padding: 5px 25px;
+    background-color: orangered;
+    margin-right: 0;
+}
+
+.contact {
+    padding: 150px 300px;
+}
+
+.contact-content {
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+
+
+input {
+    padding: 18px 25px;
+    background-color: gray;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+::placeholder { 
+    color: wheat;
+    font-size: 17px;
+}
+
+.btn-3 {
+    background-color: orangered;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.link ul {
+    display: flex;
+}
+
+.link ul li > a {
+    font-size: 17px;
+    color: white;
+    margin-right: 20px;
+}
+
+.linkul li > a:hover {
+    color: orangered;
+}
+
+
+
+body{
+  height: 100%; 
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #fe6e00; 
+}
+
+label{
+  display: block; 
+  float: center;  
+}
+.contact_form{  
+  width: 500px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ff5e00; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #ffffff; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ff5e00;
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #ff5e00; 
+  border-color: #ff5e00; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+  color: #fff; 
+}
+
+
+span{
+  color: #ab4493; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #ff4410;
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+</style>
